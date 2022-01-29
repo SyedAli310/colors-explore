@@ -11,7 +11,7 @@ p {
 #result {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-gap: 10px;
   place-items: center;
   text-align: center;
@@ -54,8 +54,8 @@ p {
 }
 .color-card .color-card-bg {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   transition: all 300ms ease;
 }
 
