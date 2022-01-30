@@ -1,12 +1,44 @@
 body {
   background: #2c3e50;
   box-sizing: border-box;
+  margin-block: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-p {
+p ,hr{
   margin-block-start: unset;
   margin-block-end: unset;
+}
+
+.github-credit{
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #2c3e50;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.github-credit p{
+  display: flex;
+  gap: 0.5rem;
+  color: #fff;
+  text-align: center;
+  padding-block: 0.5rem;
+}
+.github-credit p a{
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
+  color: royalblue;
+}
+.github-credit p a:hover{
+  color: #fff;
 }
 #result {
   width: 100%;
@@ -15,6 +47,7 @@ p {
   grid-gap: 10px;
   place-items: center;
   text-align: center;
+  margin-top: 0.5rem;
 }
 
 .color-card {
