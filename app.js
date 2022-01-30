@@ -52,7 +52,6 @@ const getColors = async (url) => {
       if (colorHexValue.length < 7 && colorHexValue.length === 6) {
         colorHexValue = colorHexValue.insert(5, "0");
       }
-      console.log(colorHexValue);
       const colorCard = document.createElement("div");
       colorCard.classList.add("color-card");
       colorCard.innerHTML = `
