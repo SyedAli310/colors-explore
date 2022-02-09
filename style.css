@@ -28,6 +28,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
   z-index: 100;
 }
 .github-credit p {
@@ -35,7 +36,7 @@ hr {
   gap: 0.5rem;
   color: #fff;
   text-align: center;
-  font-size: large;
+  /* font-size: large; */
   padding-block: 0.5rem;
 }
 .github-credit p a {
@@ -46,7 +47,8 @@ hr {
   color: royalblue;
 }
 .github-credit p a:hover {
-  color: #fff;
+  color: lightblue;
+  text-decoration: underline;
 }
 #result {
   width: 100%;

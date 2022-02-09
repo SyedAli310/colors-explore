@@ -45,7 +45,7 @@ const copyToClipboard = (element) => {
   if (navigator.clipboard) {
     navigator.clipboard.writeText(element.dataset.hex).then(
       function () {
-        console.log(element.dataset.hex);
+        console.log("Copied -> ", element.dataset.hex);
         element.innerHTML =
           '<ion-icon class="success" name="checkmark-done-outline"></ion-icon>';
         setTimeout(() => {
