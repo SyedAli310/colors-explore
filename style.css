@@ -2,15 +2,18 @@ body {
   background: #2c3e50;
   box-sizing: border-box;
   margin-block: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-p ,hr{
+p,
+hr {
   margin-block-start: unset;
   margin-block-end: unset;
 }
+.success {
+  color: #2fca4f;
+}
 
-.github-credit{
+.github-credit {
   position: sticky;
   top: 0;
   left: 0;
@@ -23,21 +26,22 @@ p ,hr{
   align-items: center;
   z-index: 100;
 }
-.github-credit p{
+.github-credit p {
   display: flex;
   gap: 0.5rem;
   color: #fff;
   text-align: center;
+  font-size: large;
   padding-block: 0.5rem;
 }
-.github-credit p a{
+.github-credit p a {
   display: flex;
   align-items: center;
   gap: 0.25rem;
   text-decoration: none;
   color: royalblue;
 }
-.github-credit p a:hover{
+.github-credit p a:hover {
   color: #fff;
 }
 #result {
@@ -60,26 +64,31 @@ p ,hr{
 }
 .color-card:hover {
   border-radius: 2px;
-  outline: 1px solid #fff;
+  /* outline: 1px solid #fff; */
   z-index: 2;
 }
 .color-card:hover > .color-card-bg {
-  border-radius: 100%;
+  /* border-radius: 100%; */
+  outline: 5px solid #000;
   transform: scale(0.75);
 }
 .color-card .color-code {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 75%;
   margin: 0.5rem auto;
   color: lightblue;
   padding: 5px;
-  font-size: large;
-  font-weight: bold;
-  text-transform: uppercase;
   opacity: 0;
   visibility: hidden;
-  border-top: 1px solid #fff;
-  text-align: center;
+  border-top: 1px solid #000;
   transition: all 50ms ease-out;
+}
+.color-card .color-code p {
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
 }
 .color-card:hover > .color-code {
   opacity: 1;
@@ -91,7 +100,16 @@ p ,hr{
   height: 150px;
   transition: all 300ms ease;
 }
-
+.color-card .copy-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 0rem 0.25rem;
+  font-size: large;
+  border-radius: 4px;
+}
 /* loader styles (codepen) */
 .loaders {
   left: 0;
