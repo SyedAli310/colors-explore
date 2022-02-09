@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
+
 body {
   background: #2c3e50;
   box-sizing: border-box;
   margin-block: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu Mono", monospace;
 }
 p,
 hr {
@@ -82,7 +84,7 @@ hr {
   padding: 5px;
   opacity: 0;
   visibility: hidden;
-  border-top: 1px solid #000;
+  border-top: 1px solid lightblue;
   transition: all 50ms ease-out;
 }
 .color-card .color-code p {
